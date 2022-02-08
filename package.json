@@ -1,0 +1,26 @@
+{
+  "name": "pokedexreact",
+  "version": "1.0.0",
+  "description": "Create a pokedex using react",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapr53/PokedexReact.git"
+  },
+  "keywords": [
+    "react",
+    "javaScript",
+    "HTML",
+    "CSS",
+    "Pokedex"
+  ],
+  "author": "Kevin Palma <kapalma05@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapr53/PokedexReact/issues"
+  },
+  "homepage": "https://github.com/kapr53/PokedexReact#readme"
+}
