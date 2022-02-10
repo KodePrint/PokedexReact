@@ -26,6 +26,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 8rem;
+    margin-bottom: 2rem;
 }
 .searchbar {
     width: 32rem;

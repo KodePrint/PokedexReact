@@ -10,7 +10,8 @@ const TypesContainer = (props) => {
                 return (
                     <Type key={type.slot} type={type}/>
                 )
-            })}            
+            })}
+            <i className="fa-solid fa-circle-ellipsis"></i>
         </div>
     );
 }

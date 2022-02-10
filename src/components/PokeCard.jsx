@@ -7,10 +7,13 @@ const PokeCard = (props) => {
     return (
         <div className="card">
             <picture>
-                {console.log(pokemon.sprites.other['official-artwork'])}
-                {console.log(typeof(pokemon.sprites.other['official-artwork']))}
-                <span className='number'>N.° {pokemon.id}</span>
-                <img src={pokemon.sprites.other["official-artwork"].front_default} alt="" />
+                <span className='number'>N.° {pokemon.id.toString().padStart(3, 0)}</span>
+                <img 
+                    loading='lazy' 
+                    src={pokemon.sprites.other["official-artwork"].front_default} 
+                    alt={pokemon.name} />
+                <div className="heart">
+                </div>
             </picture>
             <div className="info">
                 <h3 className='name'>{pokemon.name}</h3>

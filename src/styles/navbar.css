@@ -3,6 +3,7 @@
     --dark: #272430;
     --white: #fff;
     --border: #e6e6e6;
+    --gray: #919191;
 }
 * {
     margin: 0;
@@ -24,8 +25,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: .2rem .2rem 1rem var(--border);
+    box-shadow: .5rem .5rem 1rem var(--gray);
     margin-bottom: 2rem;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
 }
 .nav .container {
     width: 100%;

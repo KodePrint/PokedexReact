@@ -21,6 +21,7 @@ body {
     font-size: 1.6rem;
     width: 100%;
 }
+
 .card picture {
     display: flex;
     max-width: min(100%, 28rem);
@@ -34,10 +35,31 @@ body {
     border-radius: .5rem;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .card picture img {
     height: 100%;
     object-fit: contain;
+    transition: 1s ease;
+}
+.card picture .heart {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../assets/images/icons/pokeball.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: blur(1rem);
+    opacity: 0;
+    transition: 1s ease;
+}
+.card:hover picture img {
+    filter: blur(.2rem);
+}
+
+.card:hover picture .heart {
+    opacity: 1;
 }
 .number {
     display: block;

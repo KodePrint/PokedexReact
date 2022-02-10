@@ -21,9 +21,10 @@ body {
 
 .pokedex-contaner {
     max-width: min(100%, 90rem);
-    margin: 2rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 25rem));
     gap: 1.5rem;
     justify-content: center;
+    margin-bottom: 2rem;
 }

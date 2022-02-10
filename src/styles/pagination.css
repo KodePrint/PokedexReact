@@ -1,0 +1,12 @@
+.pagination-contanier {
+    max-width: min(128rem, 32rem);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-contanier .buttons {
+    width: 5rem;
+    height: 3rem;
+}
