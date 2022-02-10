@@ -1,0 +1,60 @@
+:root {
+    --dark: #272430;
+    --white: #fff;
+    --border: #e6e6e6;
+    --gray: #919191;
+    --text-dark: #313131;
+    --ubuntu_font: 'Ubuntu', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+}
+.card picture {
+    display: flex;
+    max-width: min(100%, 28rem);
+    height: 20rem;
+    background: var(--border);
+    /* background-image: url('../assets/images/icons/pokeball.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+    position: relative;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.card picture img {
+    height: 100%;
+    object-fit: contain;
+}
+.number {
+    display: block;
+    color: var(--gray);
+    font-family: var(--ubuntu_font), arial, sans-serif;
+    position: absolute;
+    font-weight: bold;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.4rem;
+    z-index: 1;
+}
+.card .info {
+    padding: 1rem;
+}
+.name {
+    color: var(--text-dark);
+    text-transform: capitalize;
+    font-family: var(--ubuntu_font), arial, sans-serif;
+}

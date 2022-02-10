@@ -1,0 +1,40 @@
+
+:root {
+    --dark: #272430;
+    --white: #fff;
+    --border: #e6e6e6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+}
+.nav {
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: .2rem .2rem 1rem var(--border);
+    margin-bottom: 2rem;
+}
+.nav .container {
+    width: 100%;
+    max-width: min(100%, 128rem);
+    padding: 0rem 1rem;
+}
+.nav picture {
+    height: 100%;
+}
+.nav picture img {
+    height: 100%;
+}

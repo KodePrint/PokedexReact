@@ -1,8 +1,17 @@
 import React from 'react';
+import Navbar from './Navbar';
+import SearchBar from './SearchBar';
+import Pokedex from '../containers/Pokedex';
 
 const App = () => {
     return (
-        <h1>Pokedex</h1>
+        <div>
+            <Navbar/>
+            <div className='App'>
+                <SearchBar/>
+                <Pokedex/>
+            </div>
+        </div>
     );
 }
 
