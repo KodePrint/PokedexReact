@@ -9,6 +9,7 @@ const SearchBar = () => {
 
   const onChange = (e) => {
     setSearch(e.target.value)
+    const searchButton = document.querySelector('.search')
   }
   const onClick = async (e) => {
     const data = await searchPokemon(search);
@@ -24,10 +25,10 @@ const SearchBar = () => {
               onChange={onChange} />
         </div>
         <div className="searchbar-button">
-          <button 
+          <button
               className="search" 
               onClick={onClick}>
-              Buscar
+              <i className="fas fa-search"></i>
             </button>
         </div>
         {pokemon && 

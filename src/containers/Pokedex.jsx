@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { getPokemonData, getPokemons } from '../utils/api';
 import PokeCard from '../components/PokeCard';
 import Pagination from '../components/Pagination';
+import SearchBar from '../components/SearchBar';
+
 import '@styles/pokedex.css'
+import { FavoriteProvider } from '../contexts/favoritesContex';
 
 const Pokedex = () => {
     const [pokemons, setPokemons] = useState([])
@@ -10,18 +13,17 @@ const Pokedex = () => {
     const [page, setPage] = useState(0);
     const [total, setTotal] = useState(0);
     const [loading, setLoading] = useState(true);
+    
 
     // Para la siguiente pagina
     const nextPage = () => {
         const nextPage = Math.min(page + 1, total);
         setPage(nextPage);
-        console.log(page)
     };
     // Para la pagina anterior
     const lastPage = () => {
         const nextPage = Math.max(page - 1, 0);
         setPage(nextPage);
-        console.log(page)
     };
 
     const fetchPokemons = async() => {
@@ -47,6 +49,7 @@ const Pokedex = () => {
 
     return (
         <div className="pokedex">
+            <SearchBar/>
             <Pagination 
                 page={page + 1} 
                 totalPages={total}
@@ -62,6 +65,11 @@ const Pokedex = () => {
                     })
                 }
             </div>
+            <Pagination 
+                page={page + 1} 
+                totalPages={total}
+                onLeftClick={lastPage}
+                onRightClick={nextPage} />
         </div>
     );
 }

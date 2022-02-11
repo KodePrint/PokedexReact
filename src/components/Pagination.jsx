@@ -8,12 +8,12 @@ const Pagination = (props) => {
         <div className="pagination-contanier">
             <button className="buttons left"
                 onClick={onLeftClick}>
-                    left
+                    <i className="fas fa-angle-left"></i>
             </button>
             <div className="pages">{page} de {totalPages}</div>
             <button className="buttons rigth"
                 onClick={onRightClick}>
-                    rigth
+                    <i className="fas fa-angle-right"></i>
             </button>
         </div>
     );

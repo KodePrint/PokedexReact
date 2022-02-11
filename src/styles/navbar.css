@@ -4,6 +4,7 @@
     --white: #fff;
     --border: #e6e6e6;
     --gray: #919191;
+    --ubuntu_font: 'Ubuntu', sans-serif;
 }
 * {
     margin: 0;
@@ -35,10 +36,41 @@ body {
     width: 100%;
     max-width: min(100%, 128rem);
     padding: 0rem 1rem;
+    display: flex;
 }
 .nav picture {
     height: 100%;
 }
 .nav picture img {
+    height: 100%;
+}
+
+.favorits {
+    height: 6rem;
+    padding: 1rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.favorits span {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgb(255, 208, 0);
+    border-radius: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-weight: bold;
+    font-family: var(--ubuntu_font);
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    box-shadow: .2rem .2rem .5rem #000;
+}
+
+.favorits img {
     height: 100%;
 }
